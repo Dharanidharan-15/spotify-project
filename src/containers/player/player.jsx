@@ -7,6 +7,7 @@ import { player_middle_section, player_right_section } from "./dataset";
 import VolumeControl from "../../components/volumeControl/volumeControl";
 
 function Player() {
+  const style = { styles: "-webkit-appearance: none !important" };
   return (
     <div className="Player">
       <div className="player-leftSection">
@@ -18,17 +19,17 @@ function Player() {
       </div>
       <div className="player-middle">
         <div>
-        {player_middle_section.map((data, index) => {
-          return (
-            <Button
-              icon={data.icon}
-              heightClass={data.heightClass}
-              key={index}
-            />
-          );
-        })}
+          {player_middle_section.map((data, index) => {
+            return (
+              <Button
+                icon={data.icon}
+                heightClass={data.heightClass}
+                key={index}
+              />
+            );
+          })}
         </div>
-        <VolumeControl  style={"-webkit-appearance: none !important; width:0; height:0;"}/>
+        <VolumeControl style={style.styles} />
       </div>
       <div className="player-rightSection">
         {player_right_section.map((data, index) => {

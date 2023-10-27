@@ -18,7 +18,7 @@ const   VolumeControl = (props) => {
         step="1"
         value={volume}
         onChange={handleVolumeChange}
-        style={props.style}
+        style={props}
       />
     </div>
   );
