@@ -1,8 +1,9 @@
 import React from 'react'
-import Sidebar from '../components/sidebar/sidebar'
-import Player from '../components/player/player'
+import Sidebar from '../containers/sidebar/sidebar';
+import Player from '../containers/player/player';
 
-const Layout = (children) => {
+
+const Layout = ({children}) => {
   return (
     <>
     <Sidebar />

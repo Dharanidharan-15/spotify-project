@@ -1,12 +1,12 @@
 import "./button.scss";
 
-export const Button = (props) => {
+ const Button = (props) => {
   const click = props.onClick;
   return (
     <button
       type={props.type || "button"}
       onClick={click}
-      className={props.className}
+      className={props.className + " " + props.heightClass}
       style={{ background: props.background, color: props.color }}
       disabled={props.isDisabled || false}
     >
@@ -15,3 +15,5 @@ export const Button = (props) => {
     </button>
   );
 };
+
+export default Button;

@@ -1,0 +1,87 @@
+@import "../../stylesheets/color-string-constants.scss";
+.Player {
+  height: 6.8rem;
+  //   border: 2px solid rgb(221, 64, 168);
+  background: $black;
+  display: flex;
+  justify-content: space-between;
+  Button {
+    cursor: pointer;
+    color: $white;
+  }
+
+  .player-leftSection {
+    width: 17rem;
+    // border: 2px solid rgb(221, 64, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 2px;
+    img {
+      padding: 0.7rem;
+    }
+    p {
+      padding: 1rem;
+      color: $white;
+    }
+    Button {
+      background: transparent;
+      border: none;
+      font-size: 1.3rem;
+      color: rgb(31, 233, 31);
+      padding-right: 0.8rem;
+    }
+  }
+
+  .player-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    Button {
+      background: transparent;
+      border: none;
+      font-size: 1.3rem;
+      padding: 1rem;
+    }
+    #volumeRange {
+      height: 5px;
+      width: 31.9rem;
+      accent-color: $white;
+    }
+    #volumeRange::-webkit-slider-thumb {
+      -webkit-appearance: none !important;
+      width: 0;
+      height: 0;
+      border: none;
+      background: none;
+    }
+
+    .play-btn {
+      i {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .player-rightSection {
+    // border: 2px solid rgb(221, 64, 168);
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
+    Button {
+      background: transparent;
+      border: none;
+      font-size: 1.3rem;
+    }
+    #volumeRange {
+      width: 6rem;
+      accent-color: $white;
+    }
+
+    input {
+      color: $white;
+    }
+  }
+}

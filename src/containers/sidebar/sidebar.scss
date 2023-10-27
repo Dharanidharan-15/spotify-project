@@ -3,13 +3,16 @@
 
 
 .Sidebar {
-height: 100vh;
+height: 88vh;
 width: 17rem;
 border: 2px solid black;
 background: $sidebar-background;
 display: flex;
 flex-direction: column;
 gap: 2rem;
+Button{
+    cursor: pointer;
+}
 }
 
 .logo{
