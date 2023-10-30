@@ -1,0 +1,16 @@
+@import "../../stylesheets/color-string-constants.scss";
+
+.Homepage {
+  height: 52.2rem;
+  width: 100%;
+  background: linear-gradient(rgb(5, 5, 104), rgb(13, 16, 46));
+}
+
+.homepageHeader {
+  border: 1px solid white;
+  height: 18rem;
+
+  h1 {
+    color: $white;
+  }
+}

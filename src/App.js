@@ -1,11 +1,14 @@
 import Layout from "./layout/layout";
+import Homepage from "./pages/homepage/homepage";
 import "./stylesheets/color-string-constants.scss";
 
 function App() {
   return (
+    <div className="App">
     <Layout>
-      <div className="App"></div>
+        <Homepage />
     </Layout>
+      </div>
   );
 }
 

@@ -1,0 +1,39 @@
+@import "../../stylesheets/color-string-constants.scss";
+.SuggestionComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  height: 4.4rem;
+  width: 25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  p {
+    color: white;
+  }
+
+  Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    border: none;
+    margin-right: 0.7rem;
+    opacity: 0;
+    cursor: pointer;
+  }
+  Button:hover {
+    scale: 1.1;
+  }
+}
+
+.SuggestionComponent:hover {
+  background-color: hsla(0, 0%, 100%, 0.205);
+  Button {
+    opacity: 1;
+  }
+}

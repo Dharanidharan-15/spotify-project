@@ -1,4 +1,5 @@
 @import "../../stylesheets/color-string-constants.scss";
+
 .Player {
   height: 6.8rem;
   //   border: 2px solid rgb(221, 64, 168);
@@ -28,7 +29,7 @@
       background: transparent;
       border: none;
       font-size: 1.3rem;
-      color: rgb(31, 233, 31);
+      color: $green;
       padding-right: 0.8rem;
     }
   }
@@ -38,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    p{
+    p {
       color: $white;
     }
     Button {
@@ -51,6 +52,10 @@
       height: 5px;
       width: 31.9rem;
       accent-color: $white;
+    }
+
+    #volumeRange:hover {
+      accent-color: $green;
     }
 
     #volumeRange::-webkit-slider-thumb {
