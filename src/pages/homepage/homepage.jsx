@@ -3,6 +3,7 @@ import "./homepage.scss";
 import Suggestion from "../../components/homeHeaderComponent/Suggestion";
 import dataSuggestion from "../../components/homeHeaderComponent/dataset";
 import Button from "../../components/button/button";
+import AlbumContainer from "../../components/albumContainerComponent/albumContainer";
 
 function Homepage() {
   return (
@@ -19,7 +20,10 @@ function Homepage() {
             text="Install App"
             icon={<i className="fa fa-circle-arrow-down" />}
           />
-          <Button id="rightActions" icon={<i className="fa-regular fa-bell" />} />
+          <Button
+            id="rightActions"
+            icon={<i className="fa-regular fa-bell" />}
+          />
           <Button
             id="rightActions"
             icon={<i className="fa-regular fa-user" />}
@@ -35,6 +39,11 @@ function Homepage() {
             );
           })}
         </div>
+      </div>
+
+      <div className="albumsContainer">
+        <h1>More like Jolly vibes</h1>
+        <AlbumContainer />
       </div>
     </div>
   );

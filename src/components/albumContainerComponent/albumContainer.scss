@@ -1,0 +1,52 @@
+@import "../../stylesheets/color-string-constants.scss";
+
+.AlbumContainer {
+  height: 15rem;
+  width: 10.5rem;
+  background: rgba(0, 0, 0, 0.404);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    border-radius: 15px;
+    padding: 0.4rem;
+  }
+  p {
+    color: $white;
+  }
+
+  .albumImageSection {
+    display: flex;
+
+    Button {
+      height: 2.5rem;
+      width: 2.5rem;
+      position: absolute;
+      left: 25rem;
+      bottom: 22rem;
+      opacity: 0;
+      background: $green;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    Button:hover {
+      scale: 1.2;
+    }
+  }
+}
+
+.AlbumContainer:hover {
+  background: rgba(128, 128, 128, 0.226);
+  Button {
+    opacity: 1;
+    bottom: 22rem;
+  }
+}
