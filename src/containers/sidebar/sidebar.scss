@@ -1,39 +1,37 @@
-
 @import "../../stylesheets/color-string-constants.scss";
 
-
 .Sidebar {
-height: 88vh;
-width: 17rem;
-border: 2px solid black;
-background: $sidebar-background;
-display: flex;
-flex-direction: column;
-gap: 2rem;
-Button{
+  height: 88vh;
+  width: 15%;
+  border: 2px solid black;
+  background: $sidebar-background;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  Button {
     cursor: pointer;
-}
+  }
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    color: $white;
-    gap: .7rem;
-    margin-left: .7rem;
-    i{
-        font-size: 3.3rem;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  color: $white;
+  gap: 0.7rem;
+  margin-left: 0.7rem;
+  i {
+    font-size: 3.3rem;
+  }
 }
-.sidebar-container{
-    gap: 1rem;   
-    font-size: 1.3rem;
-    line-height: 2rem;
-    h3{
-        color:$white;
-        margin: .7rem;
-        padding: 0rem 0.7rem;
-    }
+.sidebar-container {
+  gap: 1rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  h3 {
+    color: $white;
+    margin: 0.7rem;
+    padding: 0rem 0.7rem;
+  }
 }
 
 // .sidebar-install-app{
@@ -43,9 +41,9 @@ Button{
 //         color: $white;
 //         margin-right: 2rem;
 //     }
-   
+
 //     a{
 //         text-decoration: none;
-//         color: $white; 
+//         color: $white;
 //     }
 // }

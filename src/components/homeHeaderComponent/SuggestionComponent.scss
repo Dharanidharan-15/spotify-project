@@ -1,15 +1,24 @@
 @import "../../stylesheets/color-string-constants.scss";
+
 .SuggestionComponent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: hsla(0, 0%, 100%, 0.1);
   height: 4.4rem;
-  width: 25rem;
+  width: 30rem;
   border-radius: 5px;
   cursor: pointer;
+
+  img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
   p {
-    color: white;
+    color: $white;
+    font-weight: 600;
+    position: absolute;
+    padding: 5.1rem;
   }
 
   Button {
@@ -19,7 +28,7 @@
     background-color: $green;
     height: 2.5rem;
     width: 2.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-radius: 2rem;
     border: none;
     margin-right: 0.7rem;

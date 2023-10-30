@@ -2,7 +2,7 @@
 
 .Homepage {
   height: 52.2rem;
-  width: 100%;
+  width: 85%;
   background: linear-gradient(rgb(5, 5, 104), rgb(13, 16, 46));
 }
 
@@ -12,5 +12,12 @@
 
   h1 {
     color: $white;
+  }
+
+  .suggestions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
   }
 }

@@ -7,8 +7,7 @@ const Images = (props) => {
       onClick={click}
       height={props.height}
       width={props.width}
-    >
-    </img>
+    ></img>
   );
 };
 
