@@ -5,7 +5,7 @@ import Player from "../containers/player/player";
 const Layout = ({ children }) => {
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex" ,background:"black"}}>
         <Sidebar />
         {children}
       </div>
