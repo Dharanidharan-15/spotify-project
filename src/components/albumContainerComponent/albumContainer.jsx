@@ -3,20 +3,31 @@ import "./albumContainer.scss";
 import Images from "../image/image";
 import images from "../../assets/assetsExport";
 import Button from "../button/button";
+import dataAlbumData from "./dataset";
 
 function AlbumContainer() {
   return (
     <div className="AlbumContainer">
-      <div className="albumImageSection">
-        <Images src={images.player_song_cover} height="143px" width="135px" />
-        <Button icon={<i className="fa fa-play" />} />
-      </div>
-      <div>
-        <p>hii there hello every</p>
-        <p>hello everyone</p>
-      </div>
-      {/* <TruncateText text="Anirudh Ravichandran is popularly known to a rockstar"/>
-      <TruncateText /> */}
+      {dataAlbumData.map((items, index) => {
+        return (
+          <div className="cardContainer">
+            <div className="albumImageSection">
+              <Button
+                id="albumLogo"
+                icon={<i className="fa-brands fa-spotify" />}
+              />
+              <Images
+                src={items.image}
+                height="143px"
+                width="135px"
+              />
+              <Button id="playNowAlbum" icon={<i className="fa fa-play" />} />
+            </div>
+            <p title={items.Title} id="Title"><b> {items.Title}</b></p>
+            <p id="para">{items.para}</p>
+          </div>
+        );
+      })}
     </div>
   );
 }

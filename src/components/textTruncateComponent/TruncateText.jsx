@@ -13,3 +13,5 @@ function TruncateText({ text }) {
 }
 
 export default TruncateText;
+
+// i have not used this, instead i have used css handling ...

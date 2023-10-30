@@ -1,8 +1,6 @@
 @import "../../stylesheets/color-string-constants.scss";
 
 .Homepage {
-  height: 51rem;
-  width: 85%;
   background: linear-gradient(rgb(5, 5, 104), rgb(13, 16, 46));
   padding-top: 16px;
   border-radius: 15px;
@@ -61,8 +59,6 @@
 
   .homepageHeader {
     padding: 1rem;
-    height: 18rem;
-
     h1 {
       color: $white;
     }

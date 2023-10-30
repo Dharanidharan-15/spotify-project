@@ -1,14 +1,12 @@
 @import "../../stylesheets/color-string-constants.scss";
 
 .AlbumContainer {
-  height: 15rem;
   width: 10.5rem;
+  height: fit-content;
   background: rgba(0, 0, 0, 0.404);
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 2.5rem;
   cursor: pointer;
 
   img {
@@ -17,17 +15,41 @@
   }
   p {
     color: $white;
+    max-width: 9.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1px;
+    margin-left: 6px;
+    text-align: center;
+  }
+
+  #para {
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: .8rem;
   }
 
   .albumImageSection {
     display: flex;
+    position: relative;
 
-    Button {
+    #albumLogo {
+      position: absolute;
+      background: none;
+      border: none;
+      padding: 0.8rem;
+      color: white;
+    }
+
+    #playNowAlbum {
+      position: absolute;
+      right: 0;
       height: 2.5rem;
       width: 2.5rem;
-      position: absolute;
-      left: 25rem;
-      bottom: 22rem;
       opacity: 0;
       background: $green;
       border: none;
@@ -35,18 +57,26 @@
       font-size: 1rem;
       cursor: pointer;
       transition: 0.3s;
+      bottom: -1rem;
     }
 
-    Button:hover {
+    #playNowAlbum:hover {
       scale: 1.2;
     }
   }
 }
 
-.AlbumContainer:hover {
+.cardContainer {
+  width: 10.5rem;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.404);
+}
+
+.cardContainer:hover {
   background: rgba(128, 128, 128, 0.226);
-  Button {
+  #playNowAlbum {
+    margin-top: 6.5rem;
     opacity: 1;
-    bottom: 22rem;
+    bottom: 0.9rem;
   }
 }
