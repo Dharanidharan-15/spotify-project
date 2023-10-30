@@ -1,7 +1,6 @@
 import React from "react";
 import "./albumContainer.scss";
 import Images from "../image/image";
-import images from "../../assets/assetsExport";
 import Button from "../button/button";
 import dataAlbumData from "./dataset";
 
@@ -24,7 +23,7 @@ function AlbumContainer() {
               <Button id="playNowAlbum" icon={<i className="fa fa-play" />} />
             </div>
             <p title={items.Title} id="Title"><b> {items.Title}</b></p>
-            <p id="para">{items.para}</p>
+            <p id="para" title={items.para}>{items.para}</p>
           </div>
         );
       })}

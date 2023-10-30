@@ -8,25 +8,37 @@ const dataAlbumData = [
   },
   {
     image: images.SugAlbum2,
-    Title: "Anirudh Ravichandran",
+    Title: "2010s Mix",
     para: "Anirudh Ravichandran is popularly known to a rockstar",
   },
   {
     image: images.SugAlbum3,
-    Title: "Anirudh Ravichandran",
+    Title: "A.R.Rahman Mix",
     para: "Anirudh Ravichandran is popularly known to a rockstar",
   },
   {
     image: images.SugAlbum4,
-    Title: "Anirudh Ravichandran",
+    Title: "Pop Mix",
     para: "Anirudh Ravichandran is popularly known to a rockstar",
-  },{
+  },
+  {
     image: images.SugAlbum5,
-    Title: "Anirudh Ravichandran",
+    Title: "Playback Stars",
     para: "Anirudh Ravichandran is popularly known to a rockstar",
-  },{
+  },
+  {
     image: images.SugAlbum6,
-    Title: "Anirudh Ravichandran",
+    Title: "Tamil Mix",
+    para: "Anirudh Ravichandran is popularly known to a rockstar",
+  },
+  {
+    image: images.SugAlbum1,
+    Title: "Peppy Pop Hits",
+    para: "Anirudh Ravichandran is popularly known to a rockstar",
+  },
+  {
+    image: images.SugAlbum2,
+    Title: "Modern Akatshuki",
     para: "Anirudh Ravichandran is popularly known to a rockstar",
   },
 ];
