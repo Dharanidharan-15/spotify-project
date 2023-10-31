@@ -4,6 +4,7 @@
   background: linear-gradient(rgb(5, 5, 104), rgb(13, 16, 46));
   padding-top: 16px;
   border-radius: 15px;
+  scroll-behavior: auto;
 
   .homepageTop {
     display: flex;
@@ -72,9 +73,29 @@
   }
 
   .albumsContainer {
-    padding: 1rem;
+    padding: 1.2rem;
+    
     h1 {
       color: $white;
     }
+
+    .showAll {
+      color: rgb(128, 128, 128);
+      cursor: pointer;
+    }
+
+    .showAll:hover{
+      text-decoration: underline;
+    }
+
+    .albumContainerheader {
+      display: flex;
+      place-items: center;
+      justify-content: space-between;
+    }
+  }
+  .displayingSection{
+    display: flex;
+    gap: 2.7rem;
   }
 }

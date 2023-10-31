@@ -4,6 +4,7 @@ import Suggestion from "../../components/homeHeaderComponent/Suggestion";
 import dataSuggestion from "../../components/homeHeaderComponent/dataset";
 import Button from "../../components/button/button";
 import AlbumContainer from "../../components/albumContainerComponent/albumContainer";
+import {dataAlbumData1, dataAlbumData2, dataAlbumData3} from "../../components/albumContainerComponent/dataset";
 
 function Homepage() {
   return (
@@ -40,11 +41,65 @@ function Homepage() {
           })}
         </div>
       </div>
+      <div className="albumsContainer">
+        <div className="albumContainerheader">
+          <h1>More like Jolly vibes</h1>
+          <p className="showAll">Show all</p>
+        </div>
+        <div className="displayingSection">
+          {dataAlbumData1.map((items, index) => {
+            return <AlbumContainer items={items} key={index} />;
+          })}
+        </div>
+      </div>
 
       <div className="albumsContainer">
-        <h1>More like Jolly vibes</h1>
-        <AlbumContainer />
+        <div className="albumContainerheader">
+          <h1>Fresh new music</h1>
+          <p className="showAll">Show all</p>
+        </div>
+        <div className="displayingSection">
+          {dataAlbumData2.map((items, index) => {
+            return <AlbumContainer items={items} key={index} />;
+          })}
+        </div>
       </div>
+
+      <div className="albumsContainer">
+        <div className="albumContainerheader">
+          <h1>Your top mixes</h1>
+          <p className="showAll">Show all</p>
+        </div>
+        <div className="displayingSection">
+          {dataAlbumData3.map((items, index) => {
+            return <AlbumContainer items={items} key={index} />;
+          })}
+        </div>
+      </div>
+
+      <div className="albumsContainer">
+        <div className="albumContainerheader">
+          <h1>Made for you</h1>
+          <p className="showAll">Show all</p>
+        </div>
+        <div className="displayingSection">
+          {dataAlbumData3.map((items, index) => {
+            return <AlbumContainer items={items} key={index} />;
+          })}
+        </div>
+      </div>
+
+      {/* <div className="albumsContainer">
+        <div className="albumContainerheader">
+          <h1>Jump back in</h1>
+          <p className="showAll">Show all</p>
+        </div>
+        <div className="displayingSection">
+          {dataAlbumData.map((items, index) => {
+            return <AlbumContainer items={items} key={index} />;
+          })}
+        </div>
+      </div> */}
     </div>
   );
 }
