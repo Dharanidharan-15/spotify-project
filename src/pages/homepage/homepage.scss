@@ -1,7 +1,9 @@
 @import "../../stylesheets/color-string-constants.scss";
 
 .Homepage {
-  background: linear-gradient(rgb(5, 5, 104), rgb(13, 16, 46));
+  // background: linear-gradient(rgb(5, 5, 104), rgb(13, 16, 46));
+  background: linear-gradient(rgba(0, 0, 0, 0.425), rgba(199, 23, 61, 0.836));
+  // background: var(c);
   padding-top: 16px;
   border-radius: 15px;
   scroll-behavior: auto;
@@ -74,7 +76,7 @@
 
   .albumsContainer {
     padding: 1.2rem;
-    
+
     h1 {
       color: $white;
     }
@@ -84,7 +86,7 @@
       cursor: pointer;
     }
 
-    .showAll:hover{
+    .showAll:hover {
       text-decoration: underline;
     }
 
@@ -94,7 +96,7 @@
       justify-content: space-between;
     }
   }
-  .displayingSection{
+  .displayingSection {
     display: flex;
     gap: 2.7rem;
   }

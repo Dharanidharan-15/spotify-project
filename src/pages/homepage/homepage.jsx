@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./homepage.scss";
 import Suggestion from "../../components/homeHeaderComponent/Suggestion";
 import dataSuggestion from "../../components/homeHeaderComponent/dataset";
 import Button from "../../components/button/button";
 import AlbumContainer from "../../components/albumContainerComponent/albumContainer";
-import {dataAlbumData1, dataAlbumData2, dataAlbumData3} from "../../components/albumContainerComponent/dataset";
+import {
+  dataAlbumData1,
+  dataAlbumData2,
+  dataAlbumData3,
+} from "../../components/albumContainerComponent/dataset";
 
 function Homepage() {
+  const colorRef = useRef(null);
+  // const [color, setColor] = useState("#7bc002");
+  function setData(data) {
+    colorRef.current.style.background = data;
+  }
   return (
-    <div className="Homepage">
+    <div className="Homepage" ref={colorRef}>
       <div className="homepageTop">
         <div className="navigationButtons">
           <Button icon={<i className="fa-solid fa-chevron-left" />} />
@@ -36,7 +45,13 @@ function Homepage() {
         <div className="suggestions">
           {dataSuggestion.map((items, index) => {
             return (
-              <Suggestion src={items.image} text={items.text} key={index} />
+              <Suggestion
+                src={items.image}
+                text={items.text}
+                key={index}
+                color={items.color}
+                setData={setData}
+              />
             );
           })}
         </div>
@@ -83,7 +98,7 @@ function Homepage() {
           <p className="showAll">Show all</p>
         </div>
         <div className="displayingSection">
-          {dataAlbumData3.map((items, index) => {
+          {dataAlbumData1.map((items, index) => {
             return <AlbumContainer items={items} key={index} />;
           })}
         </div>
