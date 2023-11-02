@@ -2,7 +2,7 @@ import images from "../../assets/assetsExport";
 
 const dataSuggestion = [
   {
-    image: images.SugAlbum1,
+    image: images.Liked_songs,
     text: "Liked Songs",
     color: "",
   },

@@ -1,5 +1,6 @@
 const images = {
   player_song_cover: require("./song_cover_album.jpg"),
+  Liked_songs: require("./liked_songs.jpg"),
   SugAlbum1: require("./album1.jpeg"),
   SugAlbum2: require("./album2.jpeg"),
   SugAlbum3: require("./album3.jpeg"),

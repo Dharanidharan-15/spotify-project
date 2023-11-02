@@ -40,6 +40,7 @@ function Homepage() {
           />
         </div>
       </div>
+
       <div className="homepageHeader">
         <h1>Good morning</h1>
         <div className="suggestions">
@@ -56,6 +57,7 @@ function Homepage() {
           })}
         </div>
       </div>
+
       <div className="albumsContainer">
         <div className="albumContainerheader">
           <h1>More like Jolly vibes</h1>
@@ -104,17 +106,17 @@ function Homepage() {
         </div>
       </div>
 
-      {/* <div className="albumsContainer">
+      <div className="albumsContainer">
         <div className="albumContainerheader">
           <h1>Jump back in</h1>
           <p className="showAll">Show all</p>
         </div>
         <div className="displayingSection">
-          {dataAlbumData.map((items, index) => {
+          {dataAlbumData2.map((items, index) => {
             return <AlbumContainer items={items} key={index} />;
           })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
