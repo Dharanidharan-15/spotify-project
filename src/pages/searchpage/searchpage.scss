@@ -4,7 +4,6 @@
   color: white;
   width: 100%;
   padding: 1rem;
-  //   background-color: white;
 }
 
 .homepageTop {
@@ -88,4 +87,11 @@
       color: $white;
     }
   }
+}
+
+.searchpageBodyInner{
+  display: flex;
+  gap: 1.8rem;
+  width: 100%;
+  flex-wrap: wrap;
 }

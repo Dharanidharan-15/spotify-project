@@ -2,6 +2,7 @@ import React from "react";
 import "./searchpage.scss";
 import Button from "../../components/button/button";
 import CategoryComponent from "../../components/CategoryCompSearchPage/CategoryComponent";
+import { categoryComponentData } from "../../components/CategoryCompSearchPage/dataset";
 
 function Searchpage() {
   return (
@@ -40,10 +41,14 @@ function Searchpage() {
           />
         </div>
       </div>
-        <div className="serachpageBody">
-          <h2>Browse all</h2>
-          <CategoryComponent />
+      <div className="searchpageBody">
+        <h2>Browse all</h2>
+        <div className="searchpageBodyInner">
+          {categoryComponentData.map((items, index) => {
+            return <CategoryComponent key={index} props={items} />;
+          })}
         </div>
+      </div>
     </div>
   );
 }

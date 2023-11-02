@@ -1,8 +1,30 @@
 @import "../../stylesheets/color-string-constants.scss";
 
-.CategoryComponent{
-    border: 1px solid red;
-    width: 12rem;
-    height: 13rem;
-    background-color: rgb(128, 208, 245);
+.CategoryComponent {
+  width: 12rem;
+  height: 12rem;
+//   background-color: rgb(128, 208, 245);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  opacity: 0.9;
+  cursor: pointer;
+
+  h2 {
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+  .categoryComponentImage {
+    position: absolute;
+    right: -15px;
+    bottom: -10px;
+    rotate: 20deg;
+  }
+}
+
+.CategoryComponent:hover {
+  box-shadow: 0 0 25px rgb(133, 133, 136);
+  opacity: 1;
 }
