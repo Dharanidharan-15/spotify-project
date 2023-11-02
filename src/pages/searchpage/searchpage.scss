@@ -1,0 +1,91 @@
+@import "../../stylesheets/color-string-constants.scss";
+
+.Searchpage {
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  //   background-color: white;
+}
+
+.homepageTop {
+  display: flex;
+  position: relative;
+  height: 4rem;
+  justify-content: space-between;
+  .navigationButtons {
+    display: flex;
+    gap: 0.5rem;
+    Button {
+      color: rgba(255, 255, 255, 0.63);
+      font-weight: 200;
+      background-color: rgba(0, 0, 0, 0.842);
+      border: none;
+      height: 2.2rem;
+      width: 2.2rem;
+      font-size: 1rem;
+      border-radius: 5rem;
+    }
+    .chevronRight {
+      cursor: not-allowed;
+    }
+    .chevronLeft {
+      cursor: pointer;
+    }
+    .Searching {
+      position: absolute;
+      left: 6rem;
+      top: 0.8rem;
+      font-size: 1rem;
+      cursor: pointer;
+      color: rgb(179, 177, 177);
+    }
+
+    .topSearchBar {
+      height: 2.5rem;
+      width: 16rem;
+      padding: 0 2rem;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      background-color: rgba(128, 128, 128, 0.274);
+      color: $white;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    .topSearchBar:hover,
+    .Searching:hover {
+      background-color: rgba(128, 128, 128, 0.336);
+    }
+  }
+  .homepageTopRightActions {
+    display: flex;
+    gap: 0.3rem;
+    margin-right: 0.7rem;
+    Button {
+      padding: 0.5rem;
+      border-radius: 15px;
+      border: none;
+      height: 2rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: $white;
+      color: #000000;
+      cursor: pointer;
+    }
+    Button:hover {
+      scale: 1.1;
+    }
+
+    #installApp {
+      background: #000000;
+      color: $white;
+      i {
+        margin-right: 5px;
+      }
+    }
+    #rightActions {
+      background: #000000;
+      color: $white;
+    }
+  }
+}
