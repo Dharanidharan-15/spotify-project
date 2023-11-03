@@ -21,7 +21,7 @@ function Suggestion(props) {
     >
       <Images src={props.src} height="70px" />
       <p>{props.text}</p>
-      <Button icon={<i className="fa fa-play" />} />
+      <Button title="play" icon={<i className="fa fa-play" />} />
     </div>
   );
 }

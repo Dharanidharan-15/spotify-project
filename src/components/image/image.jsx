@@ -1,11 +1,10 @@
 const Images = (props) => {
-  const click = props.onclick;
   return (
     <img
       src={props.src}
       alt={props.alt}
       className={props.className}
-      onClick={click}
+      onClick={props.onClick}
       height={props.height}
       width={props.width}
     ></img>

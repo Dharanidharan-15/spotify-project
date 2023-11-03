@@ -11,7 +11,12 @@ function Player() {
   return (
     <div className="Player">
       <div className="player-leftSection">
-        <Images src={images.player_song_cover} height="70px" text="Dreamin On" tag="Netflix"/>
+        <Images
+          src={images.player_song_cover}
+          height="70px"
+          text="Dreamin On"
+          tag="Netflix"
+        />
         <p>
           <strong>Dreamin On</strong> Netflix
         </p>
