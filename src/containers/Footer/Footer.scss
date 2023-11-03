@@ -1,0 +1,73 @@
+@import "../../stylesheets/color-string-constants.scss";
+
+.Footer {
+  color: $white;
+  background: $black-background;
+  height: 21rem;
+  padding: 3rem;
+
+  .FooterTop {
+    display: flex;
+    justify-content: space-between;
+
+    .FooterLeftSection {
+      display: flex;
+      gap: 8rem;
+      text-align: left;
+      font-size: 0.85rem;
+
+      p {
+        color: rgb(160, 156, 156);
+        cursor: pointer;
+      }
+      p:hover {
+        text-decoration: underline;
+        color: $white;
+      }
+    }
+
+    .FooterRightSection {
+      display: flex;
+      gap: 1rem;
+      Button {
+        border: none;
+        background: rgba(128, 128, 128, 0.233);
+        color: $white;
+        height: 2.3rem;
+        width: 2.3rem;
+        font-size: 0.98rem;
+        border-radius: 50%;
+      }
+
+      Button:hover {
+        background: $light-grey;
+      }
+    }
+  }
+
+  hr {
+    margin: 2rem 0;
+    border-color: rgba(128, 128, 128, 0.288);
+  }
+
+  .FooterBottom {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    Button {
+      border: none;
+      background: none;
+      color: rgb(160, 156, 156);
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    Button:hover {
+      color: $white;
+    }
+
+    p {
+      color: rgb(160, 156, 156);
+    }
+  }
+}

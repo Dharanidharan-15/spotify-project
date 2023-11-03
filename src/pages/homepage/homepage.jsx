@@ -9,6 +9,7 @@ import {
   dataAlbumData2,
   dataAlbumData3,
 } from "../../components/albumContainerComponent/dataset";
+import Footer from "../../containers/Footer/Footer";
 
 function Homepage() {
   const colorRef = useRef(null);
@@ -117,6 +118,7 @@ function Homepage() {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

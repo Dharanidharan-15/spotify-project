@@ -3,6 +3,7 @@ import "./searchpage.scss";
 import Button from "../../components/button/button";
 import CategoryComponent from "../../components/CategoryCompSearchPage/CategoryComponent";
 import { categoryComponentData } from "../../components/CategoryCompSearchPage/dataset";
+import Footer from "../../containers/Footer/Footer";
 
 function Searchpage() {
   return (
@@ -49,6 +50,7 @@ function Searchpage() {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

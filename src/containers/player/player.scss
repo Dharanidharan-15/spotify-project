@@ -52,6 +52,7 @@
       height: 5px;
       width: 31.9rem;
       accent-color: $white;
+      margin-bottom: 1.5rem;
     }
 
     #volumeRange:hover {
@@ -66,10 +67,8 @@
       background: none;
     }
 
-    .play-btn {
-      i {
-        font-size: 2.4rem;
-      }
+    .playHeight {
+      font-size: 2.1rem;
     }
   }
 

@@ -6,8 +6,7 @@ export const player_middle_section = [
   },
   { icon: <i className="fa fa-backward-step" /> },
   {
-    icon: <i className="fa fa-circle-play" />,
-    heightClass : "play-btn",
+    icon: <i className="fa fa-circle-play playHeight" />,
   },
   {
     icon: <i className="fa fa-forward-step" />,

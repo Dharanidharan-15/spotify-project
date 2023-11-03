@@ -25,13 +25,7 @@ function Player() {
       <div className="player-middle">
         <div>
           {player_middle_section.map((data, index) => {
-            return (
-              <Button
-                icon={data.icon}
-                heightClass={data.heightClass}
-                key={index}
-              />
-            );
+            return <Button icon={data.icon} key={index} />;
           })}
         </div>
         <VolumeControl style={style.styles} />
