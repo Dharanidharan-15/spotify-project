@@ -25,7 +25,7 @@ function Homepage() {
           <Button icon={<i className="fa-solid fa-chevron-right" />} />
         </div>
         <div className="homepageTopRightActions">
-          <Button text="Explore Premium" />
+          <Button text="Explore Premium" title="Upgrade to Premium"/>
           <Button
             id="installApp"
             text="Install App"
@@ -33,10 +33,12 @@ function Homepage() {
           />
           <Button
             id="rightActions"
+            title="What's New"
             icon={<i className="fa-regular fa-bell" />}
           />
           <Button
             id="rightActions"
+            title="User"
             icon={<i className="fa-regular fa-user" />}
           />
         </div>

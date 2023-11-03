@@ -10,12 +10,11 @@
 }
 
 html {
-  font-size: 62.5%; 
-   /* 1 rem = 10px; 10px/16px = 62.5% */
+  font-size: 62.5%;
+  /* 1 rem = 10px; 10px/16px = 62.5% */
 }
 
 body {
-  max-width: 1920px;
   margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
@@ -23,7 +22,7 @@ body {
 html,
 body {
   height: 100%;
-  width: 100%;
+  max-width: 192rem;
 }
 
 /* breakpoints 
@@ -36,16 +35,16 @@ body {
 }
 
 @media all and (min-width: 1200px) {
-   /* define your rem value */
+  /* define your rem value */
 }
 
 @media all and (min-width: 992px) {
-   /* define your rem value */
+  /* define your rem value */
 }
 
 @media all and (max-width: 768px) {
-   /* define your rem value */
-   /* html {
+  /* define your rem value */
+  /* html {
    font-size: 50%; 
    // 1 rem = 8px; 8px/16px = 50%
    } */
@@ -58,7 +57,7 @@ body {
   }
 }
 
- /* @media all and (max-width: 360px) and (min-width: 768px) {
+/* @media all and (max-width: 360px) and (min-width: 768px) {
  define your rem value
  html {
    font-size: 56.25%; // 1 rem = 9px; 8px/16px = 50%
@@ -66,10 +65,10 @@ body {
  } */
 
 @media all and (max-width: 360px) {
-   /* define your rem value */
+  /* define your rem value */
   html {
-    font-size: 50%; 
-     /* 1 rem = 8px; 8px/16px = 50% */
+    font-size: 50%;
+    /* 1 rem = 8px; 8px/16px = 50% */
   }
 }
 
@@ -78,5 +77,5 @@ body {
   (min--moz-device-pixel-ratio: 1.5),
   (-o-min-device-pixel-ratio: 3/2),
   (min-resolution: 1.5dppx) {
-   /* define your rem value */
+  /* define your rem value */
 }

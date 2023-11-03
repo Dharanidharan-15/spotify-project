@@ -19,7 +19,7 @@ function Footer() {
         </div>
         <div className="FooterRightSection">
           {footerRightData.map((data, index) => {
-            return <Button icon={data.icon} index={index} />;
+            return <Button icon={data.icon} key={index} />;
           })}
         </div>
       </div>
@@ -27,7 +27,7 @@ function Footer() {
       <div className="FooterBottom">
         <div>
           {FooterBottom.map((data, index) => {
-            return <Button text={data.Title} index={index} />;
+            return <Button text={data.Title} key={index} />;
           })}
         </div>
         <p>&copy;2023 Spotify DD</p>

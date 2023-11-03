@@ -7,7 +7,7 @@ const Button = (props) => {
       type={props.type || "button"}
       onClick={props.onClick}
       title={props.title}
-      key={props.key}
+      key={props.index}
       className={props.className}
       style={{ background: props.background, color: props.color }}
       disabled={props.isDisabled || false}

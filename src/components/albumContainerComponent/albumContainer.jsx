@@ -4,7 +4,6 @@ import Images from "../image/image";
 import Button from "../button/button";
 
 function AlbumContainer({ items, index }) {
-  
   return (
     <div className="AlbumContainer">
       <div className="cardContainer">
@@ -14,12 +13,16 @@ function AlbumContainer({ items, index }) {
             icon={<i className="fa-brands fa-spotify" />}
           />
           <Images src={items?.image} height="143px" width="135px" />
-          <Button id="playNowAlbum" title="play" icon={<i className="fa fa-play" />} />
+          <Button
+            id="playNowAlbum"
+            title="play"
+            icon={<i className="fa fa-play" />}
+          />
         </div>
-        <p title={items?.Title} id="Title">
+        <p className="paragraph" title={items?.Title} id="Title">
           <b> {items?.Title} </b>
         </p>
-        <p id="para" title={items?.para}>
+        <p className="paragraph" id="para" title={items?.para}>
           {items?.para}
         </p>
       </div>
