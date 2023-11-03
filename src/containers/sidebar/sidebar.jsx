@@ -14,10 +14,13 @@ function Sidebar() {
           <h2>Spotify</h2>
         </div>
         {data1.map((data, index) => {
-          data.click = () => navigate(data.path);
+          data.click = () => {
+            navigate(data.path);
+            window.location.pathname = data.path;
+          };
           return (
             <Button
-              className=" btn"
+              className={window.location.pathname === data.path ? "btn active" : " btn"}
               key={index}
               text={data.text}
               icon={data.icon}

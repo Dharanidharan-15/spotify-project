@@ -34,6 +34,10 @@
     margin: 0.7rem;
     padding: 0rem 0.7rem;
   }
+  .active {
+    background: $light-grey;
+    border-radius: 5px;
+  }
 }
 
 // .sidebar-install-app {
