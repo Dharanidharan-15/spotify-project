@@ -4,10 +4,12 @@
   width: 100%;
   .yourlibrary {
     // background-color: rgba(184, 181, 181, 0.87);
+    height: 32vh;
     display: block;
-    background: rgba(211, 211, 211, 0.842);
+    background: rgba(72, 152, 199, 0.842);
     padding: 1rem 12px;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     .chevrons {
       color: rgba(255, 255, 255, 0.795);
       cursor: pointer;
@@ -18,6 +20,73 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
+    }
+  }
+  .LibraryPageMainContent {
+    display: flex;
+    padding: 1.3rem;
+    gap: 2%;
+    color: rgb(221, 221, 221);
+    .libraryMainSideContent {
+      i {
+        border-radius: 50%;
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+        color: rgb(48, 207, 48);
+        background-color: black;
+      }
+      h1 {
+        color: white;
+        font-size: 6rem;
+        margin: 0;
+      }
+      .BrandPara {
+        color: white;
+      }
+      span {
+        color: rgb(221, 221, 221);
+      }
+    }
+  }
+  .songTable {
+    background-color: rgb(49, 48, 48);
+    height: 20vh;
+    padding: 1rem;
+    // display: flex;
+    color: rgba(199, 198, 198, 0.856);
+    .SongTableTop {
+      display: flex;
+      i {
+        color: rgba(255, 255, 255, 0.438);
+        font-size: 1.5rem;
+        padding: 10px;
+        height: 4rem;
+        display: flex;
+        place-items: center;
+        cursor: pointer;
+      }
+      i:hover {
+        color: rgb(243, 237, 237);
+      }
+      #playButton {
+        color: rgb(41, 192, 41);
+        font-size: 3rem;
+      }
+      #playButton:hover {
+        scale: 1.1;
+        color: rgb(34, 214, 34);
+      }
+    }
+    .songTableMain {
+      border: none;
+      
+      th {
+        // width: 60rem;
+        text-align: left;
+      
+      }
+      
     }
   }
 }

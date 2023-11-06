@@ -59,6 +59,8 @@
       accent-color: $green;
     }
 
+    
+
     #volumeRange::-webkit-slider-thumb {
       -webkit-appearance: none !important ;
       width: 0;
@@ -87,6 +89,9 @@
       accent-color: $white;
     }
 
+    #volumeRange:hover {
+      accent-color: $green;
+    }
     input {
       color: $white;
     }

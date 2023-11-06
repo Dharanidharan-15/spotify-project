@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef} from "react";
 import "./homepage.scss";
 import Suggestion from "../../components/homeHeaderComponent/Suggestion";
 import dataSuggestion from "../../components/homeHeaderComponent/dataset";
@@ -17,6 +17,7 @@ function Homepage() {
   function setData(data) {
     colorRef.current.style.background = data;
   }
+
   return (
     <div className="Homepage" ref={colorRef}>
       <div className="homepageTop">
@@ -25,7 +26,8 @@ function Homepage() {
           <Button icon={<i className="fa-solid fa-chevron-right" />} />
         </div>
         <div className="homepageTopRightActions">
-          <Button text="Explore Premium" title="Upgrade to Premium"/>
+          <Button text="Explore Premium" title="Upgrade to Premium" />
+
           <Button
             id="installApp"
             text="Install App"

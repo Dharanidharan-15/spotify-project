@@ -2,6 +2,8 @@ import React from "react";
 import "./YourLibrary.scss";
 import Footer from "../../containers/Footer/Footer";
 import Button from "../../components/button/button";
+import Images from "../../components/image/image";
+import images from "../../assets/assetsExport";
 
 function YourLibrary() {
   return (
@@ -39,7 +41,46 @@ function YourLibrary() {
             />
           </div>
         </div>
-        khdweiv
+        <div className="LibraryPageMainContent">
+          <Images src={images.Liked_songs} height={"230rem"} />
+          <div className="libraryMainSideContent">
+            <p>Playlist</p>
+            <h1>Daily Mix 1</h1>
+            <p>A.R. Rahman, Harris Jayaraj, Hariharan and more</p>
+            <p className="BrandPara">
+              <i className="fa-brands fa-spotify" /> Spotify . 50 songs,{" "}
+              <span>about 3 hr 30 min</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="songTable">
+        <div className="SongTableTop">
+          <i className="fa fa-circle-play" id="playButton" />
+          <i className="fa-regular fa-heart" />
+          <i className="fa-solid fa-ellipsis"/>
+        </div>
+
+        <table className="songTableMain" width={"1500px"}>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Album</th>
+            <th>Date added</th>
+            <th>
+              <i className="fa fa-clock" />
+            </th>
+          </tr>
+          {/* <hr /> */}
+
+          <tr>
+            <td>1</td>
+            <td>Thozha</td>
+            <td>Thozha</td>
+            <td>today</td>
+            <td>3:12</td>
+          </tr>
+        </table>
       </div>
 
       <Footer />
